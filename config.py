@@ -1,4 +1,4 @@
-m telethon.sessions import StringSession
+from telethon.sync import TelegramClient
 import os
 APP_ID = os.environ.get("APP_ID")
 APP_HASH = os.environ.get("APP_HASH")
