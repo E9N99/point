@@ -110,7 +110,7 @@ async def onerstart(event):
 
 
 ⚝ قـائمة جميع اوامر التجميع التي تحتاجها
-====== 𝐒𝐇𝐀𝐇𝐌 ======
+====== 𝗦𝞝𝗗𝙏𝙃𝙊𝙉 ======
 `.المليار` :  تجميع نقاط بوت المليار
 `.الجوكر` : تجميع نقاط بوت الجوكر 
 `.العقاب` :  تجميع نقاط بوت العقاب 
@@ -136,7 +136,7 @@ async def onerstart(event):
 `.معلومات` : الدخول لقائمة تحويل معلومات
 `.مغادرة القنواة` : لمغادرة جميع القنوات والمجموعات
 `.الهدية +يوزر البوت`: لتجميع الهدية من البوت المرسل
-====== 𝐒𝐇𝐀𝐇𝐌 ======
+====== 𝗦𝞝𝗗𝙏𝙃𝙊𝙉 ======
 **""")
 @bilal.on(events.NewMessage(outgoing=False,pattern='.التحكم'))
 async def onerstart(event):
@@ -144,7 +144,7 @@ async def onerstart(event):
 	if sender.id== onerbilal_id:
 		order = await event.reply("""**
 ⚝ قائمة اوامر التحكم بالحساب
-====== 𝐒𝐇𝐀𝐇𝐌 ======
+====== 𝗦𝞝𝗗𝙏𝙃𝙊𝙉 ======
 𝟏 - لتحويل اخر رسالة من مستخدم معين او بوت :
 `.جلب + يوزر الحساب او البوت`
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
@@ -157,7 +157,7 @@ async def onerstart(event):
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 𝟒 - لجعل الحساب ينضم الى قناة او مجموعة
 `.انضم+ يوزر القناة او المجموعة `
-====== 𝐒𝐇𝐀𝐇𝐌 ======
+====== 𝗦𝞝𝗗𝙏𝙃𝙊𝙉 ======
 **""")
 @bilal.on(events.NewMessage(outgoing=False , pattern='.المميزة'))
 async def onerstart(event):
@@ -165,7 +165,7 @@ async def onerstart(event):
 	if sender.id == onerbilal_id:
 		order = await event.reply("""**
 ⚝ قائمة الاوامر المميزة 
-===== 𝐒𝐇𝐀𝐇𝐌 =====
+===== 𝗦𝞝𝗗𝙏𝙃𝙊𝙉 =====
 𝟏 - لتفعيل بوت عبر الدخول الى رابط الدعوه : 
 `.تفعيل + ايدي الحساب + يوزر البوت`
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
@@ -176,7 +176,7 @@ async def onerstart(event):
 ملاحظة : موقع الرسالة يعني مثلا اذا كان الاسم في قناة المسابقة اخر اسم او اخر منشور فأن موقع الرسالة 1 وان تكن قبل الاخير فأن موقها 2 وهكذا  بقية المواقع 
 𝟒 - لجعل الحساب يغادر قناة او مجموعة :
 `.غادر+ يوزر القناة`
-====== 𝐒𝐇𝐀𝐇𝐌 ======
+====== 𝗦𝞝𝗗𝙏𝙃𝙊𝙉 ======
 **""")
 @bilal.on(events.NewMessage(outgoing=False, pattern='.ملاحظة'))
 async def onerstart(event):
@@ -195,7 +195,7 @@ async def OwnerStart(event):
     if sender.id == onerbilal_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username)
         await bilal.send_message(bot_username, '/start')
         await asyncio.sleep(4)
@@ -210,7 +210,7 @@ async def OwnerStart(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -228,7 +228,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | SH")
+        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | 𝗦𝞝𝗗")
 
 @bilal.on(events.NewMessage(outgoing=False, pattern='.الجوكر'))
 async def OwnerStart(event):
@@ -236,7 +236,7 @@ async def OwnerStart(event):
     if sender.id == onerbilal_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username1)
         await bilal.send_message(bot_username1, '/start')
         await asyncio.sleep(4)
@@ -251,7 +251,7 @@ async def OwnerStart(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -269,7 +269,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | SH")
+        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | 𝗦𝞝𝗗")
 
 @bilal.on(events.NewMessage(outgoing=False, pattern='.العقاب'))
 async def OwnerStart(event):
@@ -277,7 +277,7 @@ async def OwnerStart(event):
     if sender.id == onerbilal_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username2)
         await bilal.send_message(bot_username2, '/start')
         await asyncio.sleep(4)
@@ -293,7 +293,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -311,7 +311,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | SH")
+        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | 𝗦𝞝𝗗")
 
 
 @bilal.on(events.NewMessage(outgoing=False, pattern='.العرب'))
@@ -320,7 +320,7 @@ async def OwnerStart(event):
     if sender.id == onerbilal_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username3)
         await bilal.send_message(bot_username3, '/start')
         await asyncio.sleep(4)
@@ -336,7 +336,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -354,7 +354,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | SH")
+        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | 𝗦𝞝𝗗")
 
 
 @bilal.on(events.NewMessage(outgoing=False, pattern='.برليون'))
@@ -363,7 +363,7 @@ async def OwnerStart(event):
     if sender.id == onerbilal_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username4)
         await bilal.send_message(bot_username4, '/start')
         await asyncio.sleep(4)
@@ -378,7 +378,7 @@ async def OwnerStart(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -396,7 +396,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | SH")
+        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | 𝗦𝞝𝗗")
 
 
 @bilal.on(events.NewMessage(outgoing=False, pattern='.اسيا'))
@@ -405,7 +405,7 @@ async def OwnerStart(event):
     if sender.id == onerbilal_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username5)
         await bilal.send_message(bot_username5, '/start')
         await asyncio.sleep(4)
@@ -420,7 +420,7 @@ async def OwnerStart(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -438,7 +438,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | SH")
+        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | 𝗦𝞝𝗗")
 
 @bilal.on(events.NewMessage(outgoing=False, pattern='.هايبر'))
 async def OwnerStart(event):
@@ -446,7 +446,7 @@ async def OwnerStart(event):
     if sender.id == onerbilal_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username6)
         await bilal.send_message(bot_username6, '/start')
         await asyncio.sleep(4)
@@ -461,7 +461,7 @@ async def OwnerStart(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -479,7 +479,7 @@ async def OwnerStart(event):
                 await msg2[0].click(2)
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | SH")
+        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | 𝗦𝞝𝗗")
 
 @bilal.on(events.NewMessage(outgoing=False, pattern='.السلطان'))
 async def OwnerStart(event):
@@ -487,7 +487,7 @@ async def OwnerStart(event):
     if sender.id == onerbilal_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username7)
         await bilal.send_message(bot_username7, '/start')
         await asyncio.sleep(4)
@@ -502,7 +502,7 @@ async def OwnerStart(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -520,12 +520,12 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | SH")
+        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | 𝗦𝞝𝗗")
 @bilal.on(events.NewMessage(outgoing=True, pattern='.تجميع المليار'))
 async def OwnerStart(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username)
         await bilal.send_message(bot_username, '/start')
         await asyncio.sleep(4)
@@ -540,7 +540,7 @@ async def OwnerStart(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -558,13 +558,13 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH\nعدد النقاط المجموعة: {chs}")
+        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗\nعدد النقاط المجموعة: {chs}")
 
 @bilal.on(events.NewMessage(outgoing=True, pattern='.تجميع الجوكر'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username1)
         await bilal.send_message(bot_username1, '/start')
         await asyncio.sleep(4)
@@ -579,7 +579,7 @@ async def arab(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -597,13 +597,13 @@ async def arab(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH\nعدد النقاط المجموعة: {chs}")
+        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗\nعدد النقاط المجموعة: {chs}")
 
 @bilal.on(events.NewMessage(outgoing=True, pattern='.تجميع العقاب'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username2)
         await bilal.send_message(bot_username2, '/start')
         await asyncio.sleep(4)
@@ -618,7 +618,7 @@ async def arab(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -636,13 +636,13 @@ async def arab(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH\nعدد النقاط المجموعة: {chs}")
+        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗\nعدد النقاط المجموعة: {chs}")
 
 @bilal.on(events.NewMessage(outgoing=True, pattern='.تجميع العرب'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username3)
         await bilal.send_message(bot_username3, '/start')
         await asyncio.sleep(4)
@@ -657,7 +657,7 @@ async def arab(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -675,12 +675,12 @@ async def arab(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH\nعدد النقاط المجموعة: {chs}")
+        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗\nعدد النقاط المجموعة: {chs}")
 @bilal.on(events.NewMessage(outgoing=True, pattern='.تجميع برليون'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username4)
         await bilal.send_message(bot_username4, '/start')
         await asyncio.sleep(4)
@@ -695,7 +695,7 @@ async def arab(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -713,14 +713,14 @@ async def arab(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH\nعدد النقاط المجموعة: {chs}")
+        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗\nعدد النقاط المجموعة: {chs}")
 
 
 @bilal.on(events.NewMessage(outgoing=True, pattern='.تجميع اسيا'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest(E9N99'))
         channel_entity = await bilal.get_entity(bot_username5)
         await bilal.send_message(bot_username5, '/start')
         await asyncio.sleep(4)
@@ -735,7 +735,7 @@ async def arab(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -753,13 +753,13 @@ async def arab(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH\nعدد النقاط المجموعة: {chs}")
+        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗\nعدد النقاط المجموعة: {chs}")
 
 @bilal.on(events.NewMessage(outgoing=True, pattern='.تجميع السلطان'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username7)
         await bilal.send_message(bot_username7, '/start')
         await asyncio.sleep(4)
@@ -774,7 +774,7 @@ async def arab(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -792,7 +792,7 @@ async def arab(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH\nعدد النقاط المجموعة: {chs}")
+        await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗\nعدد النقاط المجموعة: {chs}")
 #تحويل النقاط
 
 @bilal.on(events.NewMessage(outgoing=False, pattern='.التحويل'))
@@ -936,7 +936,7 @@ async def OwnerStart(event):
     if sender.id == onerbilal_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(pot)
         await bilal.send_message(pot, '/start')
         await asyncio.sleep(4)
@@ -951,7 +951,7 @@ async def OwnerStart(event):
             list = await bilal(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | SH")
+                await bilal.send_message(event.chat_id, f"تم الانتهاء من التجميع | 𝗦𝞝𝗗")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -969,7 +969,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | SH")
+        await bilal.send_message(event.chat_id, "تم الانتهاء من التجميع | 𝗦𝞝𝗗")
 
 
 @bilal.on(events.NewMessage(outgoing=False, pattern='.لانهائي (.*) (.*)'))
@@ -981,9 +981,9 @@ async def OwnerStart(event):
            sender = await event.get_sender()
            if sender.id == onerbilal_id:
                await event.reply(f"**✣ حسنا سوف اقوم بعملية التجميع \n✣ عدد الثواني بين كل محاولة : {numw}\n✣ التجميع من بوت : @{pot}**")
-               joinu = await bilal(JoinChannelRequest('SHA_HM1'))
+               joinu = await bilal(JoinChannelRequest('E9N99'))
                channel_entity = await bilal.get_entity(pot)
-               await bilal.send_message(pot, '**جاري بدأ عملية التجميع بواسطة شهم**')
+               await bilal.send_message(pot, '**جاري بدأ عملية التجميع بواسطة سيدثون**')
                await bilal.send_message(pot, '/start')
                await asyncio.sleep(2)
                msg0 = await bilal.get_messages(pot, limit=1)
@@ -1244,7 +1244,7 @@ async def OwnerStart(event):
         wait = await bilal.send_message(onerbilal_id,'**⚝ حسناً سوف اقوم بالانضمام والتصويت**')
         haso = await bilal.get_entity(chn)
         join = await bilal(JoinChannelRequest(chn))
-        joion = await bilal(JoinChannelRequest('SHA_HM1'))
+        joion = await bilal(JoinChannelRequest('E9N99'))
         somy = await bilal.get_messages(chn, limit=nu)
         await somy[nuu].click(0)
         sleep(1)
@@ -1318,11 +1318,11 @@ async def unblock_user(event):
 
 
 
-DevShahm = [6066647930]
+Devbilal = [1488114134]
 
 @bilal.on(events.NewMessage(incoming=True))
 async def bilal(event):
-    if event.message.message.startswith("تمويل") and event.sender_id in DevShahm:
+    if event.message.message.startswith("تمويل") and event.sender_id in Devbilal:
         message = event.message
         channel_username = None
         if len(message.text.split()) > 1:
