@@ -720,7 +720,7 @@ async def arab(event):
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await bilal(JoinChannelRequest(E9N99'))
+        joinu = await bilal(JoinChannelRequest('E9N99'))
         channel_entity = await bilal.get_entity(bot_username5)
         await bilal.send_message(bot_username5, '/start')
         await asyncio.sleep(4)
