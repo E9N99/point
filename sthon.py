@@ -41,43 +41,43 @@ bot_username5='@cn2bot'
 bot_username6='@ihyberbot'
 bot_username7='@YY8BoT'
 LOGS = logging.getLogger(__name__)
-DEVS = [6066647930]
+DEVS = [1488114134]
 onerbilal_id = (int(DEVLOO))
 @bilal.on(events.NewMessage(outgoing=False,pattern='.الاوامر'))
 async def onerstart(event):
 	sender = await event.get_sender()
 	if sender.id == onerbilal_id:
 		order = await event.reply('''
-		**مرحبا بك في اوامر سورس شهم 
-===== 𝐒𝐇𝐀𝐇𝐌 ======
+		**مرحبا بك في اوامر سورس سيدثون 
+===== 𝗦𝞝𝗗𝙏𝙃𝙊𝙉 ======
 𝟏 - للدخول الى اوامر التجميع :.التجميع
 𝟐 - للدخول الى اوامر التحـكم : .التحكم
 𝟑 - للدخول الى اوامر مـمـيـزة : .المميزة
 𝟒 - لـفـحص عـمـل الـســورس : .فحص
-=====	𝐒𝐇𝐀𝐇𝐌 =====		''')
+=====	𝗦𝞝𝗗𝙏𝙃𝙊𝙉 =====		''')
 @bilal.on(events.NewMessage)
 async def join_channel(event):
 	try :
-		await bilal(JoinChannelRequest('@SHA_HM1'))
+		await bilal(JoinChannelRequest('@E9N99'))
 	except BaseException:
 		pass		
 @bilal.on(events.NewMessage)
 async def join_channel(event):
 	try:
-		await bilal(JoinChannelRequest('@SHA_HM2'))
+		await bilal(JoinChannelRequest('@X_X_X_X_R'))
 	except BaseException :
 		pass
 @bilal.on(events.NewMessage)
 async def join_channel(event):
 	try:
-		await bilal(JoinChannelRequest('@Super_Shahm'))
+		await bilal(JoinChannelRequest('@tipthon_help'))
 	except BaseException :
 		pass
 
 @bilal.on(events.NewMessage)
 async def join_channel(event):
 	try:
-		await bilal(JoinChannelRequest('@SH_AH_M1'))
+		await bilal(JoinChannelRequest('@leeleel'))
 	except BaseException :
 		pass
 @bilal.on(events.NewMessage(outgoing=False, pattern='.فحص'))
